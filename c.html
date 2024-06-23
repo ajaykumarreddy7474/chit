@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 120px;
+        font-size: 30px;
+    }
+
+    .entity{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: -30px;
+    }
+    table{
+        background: rgb(197, 195, 195);
+        text-align: center;
+        font-size: 35px;
+        border-collapse: collapse;
+        
+    }
+    th{
+        padding: 5px 15px;
+    }
+    button{
+        background: skyblue;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 600px){
+        body{
+    font-size: 25px;
+        }
+        .entity{
+    
+        margin-bottom: -20px;
+    }
+    }
+</style>
+    <body>
+        <h4>Chit Calculator</h4>
+        <div class="entity">
+<label for="amountVal">Amount</label>
+<input type="number" name="amountVal" id="amountVal" title="a" min="1">
+</div>
+<br>
+<div class="entity"><label for="monthVal">Months</label>
+    <input type="number" name="monthVal" id="monthVal" title="a" min="1">
+</div>
+
+<br>
+<div class="entity"><label for="membersVal">Members</label>
+    <input type="number" name="membersVal" id="membersVal" title="a" min="1">
+</div>
+
+<br>
+<div class="entity"><label for="commissionVal">Commission(%)</label>
+    <input type="number" name="commissionVal" id="commissionVal" title="a" min="1">
+</div>
+<br>
+<div class="entity"><label for="interestVal">Interest(%)</label>
+    <input type="number" name="interestVal" id="interestVal" title="a" min="1"></div>
+
+<br>
+
+
+
+
+<button id="sub">Submit</button>
+<h1 id="hx"></h1>
+<script src="chit.js" />
+</body>
+</html>
